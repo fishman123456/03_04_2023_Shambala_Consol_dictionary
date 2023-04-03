@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "03_04_2023_Shambala_Consol_dictionary/1.0.0": {
+        "runtime": {
+          "03_04_2023_Shambala_Consol_dictionary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "03_04_2023_Shambala_Consol_dictionary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
