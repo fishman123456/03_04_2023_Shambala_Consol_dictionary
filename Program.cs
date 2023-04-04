@@ -12,13 +12,15 @@
 
 using _03_04_2023_Shambala_Consol_dictionary;
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        DictionaryKeyValue one;
-        one ("red", "красный");
-        Console.WriteLine();
-    }
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        DictionaryKeyValue one ("dd","jt");
+//       // one ("red", "красный");
+//        Console.WriteLine(one);
+//    }
 
-}
+//}
+DictionaryKeyValue one = new DictionaryKeyValue("red","красный");
+Console.WriteLine(one);

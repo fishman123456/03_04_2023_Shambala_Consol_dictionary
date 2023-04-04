@@ -11,11 +11,15 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         public string Key { get; set; }
         public string Value { get; set; }
 
-        DictionaryKeyValue() { }
-        DictionaryKeyValue(string key, string value)
+      public  DictionaryKeyValue() { }
+      public  DictionaryKeyValue(string key, string value)
         {
            this.Key = key;
            this.Value = value;
+        }
+        public override ()
+        {
+
         }
     }
 }
