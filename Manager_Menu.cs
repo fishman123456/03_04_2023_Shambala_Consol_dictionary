@@ -13,18 +13,18 @@ namespace _03_04_2023_Shambala_Consol_dictionary
 
         public static void UserMenu()
         {
-           
+            bool flag = true;
 
-            while (ConsoleKey.NumPad0 == ConsoleKey.NumPad0) 
+            do
             {
                 Console.WriteLine("Нажмите на клавишу для выбора действия");
 
                 var input = Console.ReadKey();
 
-
+                
                 switch (input.Key)
                 {
-
+                    
                     case ConsoleKey.NumPad1:
                         Console.WriteLine("\nNumPad1");
                         break;
@@ -54,12 +54,13 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         break;
                     case ConsoleKey.NumPad0:
                         Console.WriteLine("\nNumPad0");
+                        flag = false;
                         break;
                     default:
                         break;
 
                 }
-            }
+            } while (flag == true); // TODO 05.04.2023 2:32  сделал выход из цикла по условию 
         }
 
     }
