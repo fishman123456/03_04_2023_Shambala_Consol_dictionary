@@ -15,6 +15,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
             using (var writer = new StreamWriter("DictionaryCreateXML.xml"))
             {
                 serializer.Serialize(writer, obj);
+                Console.WriteLine("Serrializ");
             }
         }
     }

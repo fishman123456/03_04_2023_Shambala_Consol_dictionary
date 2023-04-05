@@ -23,12 +23,20 @@ using _03_04_2023_Shambala_Consol_dictionary;
 
 //}
 
-DictionaryKeyValue one = new DictionaryKeyValue("red","красный");
+List<string> list = new List<string>();
+list.Add("first");
+list.Add("second");
+List<string> list2 = new List<string>();
+list2.Add("первый");
+DictionaryKeyValue one = new DictionaryKeyValue(list,list2);
 Manager_Menu.UserHint();
 Console.WriteLine(one);
 Console.WriteLine("введите слова для поиска");
 string ver = Console.ReadLine();
-one.MethodFindeEnglish(ver);
-Manager_Menu.UserMenu();
+one.MethodFindeEngRuss(ver);
 CreationAndModificationXML cr = new CreationAndModificationXML();
 cr.SerrializationObject(one);
+
+Manager_Menu.UserMenu();
+
+
