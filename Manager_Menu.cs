@@ -72,11 +72,11 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         public static void UserHint() // todo 05-04-2023 подсказка для пользователя
         {
             Console.WriteLine("\n Программа Англорусский / Русскоанглийский словарь\n ");
-            Console.WriteLine("\t0. Для выхода из программы");
-            Console.WriteLine("\t1. Поиск перевода (нажмите для ввода слова)");
-            Console.WriteLine("\t2. Добавление слова в словарь (нажмите для ввода слова)");
-            Console.WriteLine("\t3. Изменение слова в словаре (нажмите для ввода слова)");
-            Console.WriteLine("\t4. Удаление слова из словаря (нажмите для ввода слова)");
+            Console.WriteLine("\tNumPad0. Для выхода из программы");
+            Console.WriteLine("\tNumPad1. Поиск перевода (нажмите для ввода слова)");
+            Console.WriteLine("\tNumPad2. Добавление слова в словарь (нажмите для ввода слова)");
+            Console.WriteLine("\tNumPad3. Изменение слова в словаре (нажмите для ввода слова)");
+            Console.WriteLine("\tNumPad4. Удаление слова из словаря (нажмите для ввода слова)");
             //Console.WriteLine("5. Добавление слова в словарь (нажмите для ввода слова)\n");
             //Console.WriteLine("6. Добавление слова в словарь (нажмите для ввода слова)\n");
             //Console.WriteLine("7. Добавление слова в словарь (нажмите для ввода слова)\n");
