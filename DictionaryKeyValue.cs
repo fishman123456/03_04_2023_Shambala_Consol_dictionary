@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace _03_04_2023_Shambala_Consol_dictionary
 {
-    public  class DictionaryKeyValue
+    
+    public class DictionaryKeyValue
     {
-        public List<string> Eng_words { get; set; }
-        public List<string> Rus_words { get; set; }
-       public string retmenu;
+        public List<string> Eng_words { get; set; } = new List<string>();
+        public List<string> Rus_words { get; set; } = new List<string>();
+
+        public string retmenu;
 
         public DictionaryKeyValue() { }
         public DictionaryKeyValue(List<string> engW, List<string> rusW)
@@ -18,10 +20,29 @@ namespace _03_04_2023_Shambala_Consol_dictionary
             Eng_words = engW;
             Rus_words = rusW;
         }
+        // 07-04-2023 22:01 метод добавления русского слова и перевода в словарь
+        public void MethodAdd()
+        {
+            Console.WriteLine("Введите английское слово ");
+            string WordEng = Console.ReadLine();
+            Console.WriteLine("Введите русское слово ");
+            string WordRus = Console.ReadLine();
+            // добавление слов в списки
+            Eng_words.Add(WordEng);
+            Rus_words.Add(WordRus);
+            
+            // слова добавлены, seriliaze object
+            //CreationAndModificationXML creation = new CreationAndModificationXML();
+            //creation.SerrializationObject(di);
+        }
+
+
+
         // метод для сравнения строк именно английских
         // 04.04.2023 метод сравнения английских слов работает
-        public  string MethodFindeEngRuss(string key)
+        public string MethodFindeEngRuss()
         {
+            string key = Console.ReadLine();
             foreach (string eng in Eng_words)
             {
                 if (String.Compare(eng, key) == 0)
@@ -46,10 +67,14 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         // изменить русск (англ) слово, удалить 
         public static string ReturnMenu(string st)
         {
-            if (st == "input") {Console.WriteLine("найти");} //  прописать функцию для поиска введенного слова, уже есть и на русском и на английсском
-            if (st == "add") { Console.WriteLine("добавить"); }// прописать функцию для добавления нескольких слов (англ) и переводов (русск) , создать обьект
-            if (st == "chenge") { Console.WriteLine("изменить"); } // прописать ф-ю для десерриализации, поиска слова (англ/русск) и изменения (англ\русск) 
-            if (st == "delete") { Console.WriteLine("удалить"); } // прописать ф-ю для удаления слова, т.е. обьекта
+            //  прописать функцию для поиска введенного слова, уже есть и на русском и на английсском
+            if (st == "input") { Console.WriteLine("найти"); }
+            // прописать функцию для добавления нескольких слов (англ) и переводов (русск) , создать обьект
+            if (st == "add") { Console.WriteLine("добавить"); }
+            // прописать ф-ю для десерриализации, поиска слова (англ/русск) и изменения (англ\русск) 
+            if (st == "chenge") { Console.WriteLine("изменить"); }
+            // прописать ф-ю для удаления слова, т.е. обьекта
+            if (st == "delete") { Console.WriteLine("удалить"); }
             return st;
         }
 

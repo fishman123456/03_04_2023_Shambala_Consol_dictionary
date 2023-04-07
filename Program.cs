@@ -22,27 +22,26 @@ using _03_04_2023_Shambala_Consol_dictionary;
 //    }
 
 //}
-
+// для проверки создаем списки
 List<string> list = new List<string>();
 list.Add("first");
 list.Add("second");
 List<string> list2 = new List<string>();
 list2.Add("первый");
 List<string> list3 = new List<string>();
+list3.Add("tree");
 List<string> list4 = new List<string>();
-
-DictionaryKeyValue one = new DictionaryKeyValue(list,list2);
+list4.Add("дерево");
+DictionaryKeyValue one = new DictionaryKeyValue(list, list2);
 Manager_Menu.UserHint();
-DictionaryKeyValue two = new DictionaryKeyValue(list3,list4);
+DictionaryKeyValue two = new DictionaryKeyValue(list3, list4);
 Console.WriteLine(one);
 Console.WriteLine("введите слова для поиска");
-string ver = Console.ReadLine();
-one.MethodFindeEngRuss(ver);
-CreationAndModificationXML cr = new CreationAndModificationXML();
-cr.SerrializationObject(one);
-CreationAndModificationXML cr2 = new CreationAndModificationXML();
+//cr.SerrializationObject(one);
+//CreationAndModificationXML cr2 = new CreationAndModificationXML();
+//cr.SerrializationObject(two);
 
-cr2.DeserrializationObject(one);
+//cr2.DeserrializationObject(one);
 Manager_Menu.UserMenu();
 
 

@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Eng_words>
-    <string>first</string>
-    <string>second</string>
-  </Eng_words>
-  <Rus_words>
-    <string>первый</string>
-  </Rus_words>
-</DictionaryKeyValue>
+<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />

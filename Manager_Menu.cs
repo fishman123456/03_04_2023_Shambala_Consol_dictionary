@@ -8,11 +8,15 @@ using System.Threading.Tasks;
 
 namespace _03_04_2023_Shambala_Consol_dictionary
 {
+
+  
     public class Manager_Menu
     {
-        
+
         public static void UserMenu()
         {
+            ClassDiction classDiction = new ClassDiction();
+
             #region
             bool flag = true;
             do
@@ -27,16 +31,21 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         flag = false;
                         break;
                     case ConsoleKey.NumPad1:
-                        Console.WriteLine("\nПоиск перевода введите слово");
+                        //Console.WriteLine("\nПоиск перевода введите слово");
                         DictionaryKeyValue.ReturnMenu("input");
+
                         break;
                     case ConsoleKey.NumPad2:
-                        Console.WriteLine("\nДобавление слова в словарь");
-                        DictionaryKeyValue.ReturnMenu("add");
+                        //  Console.WriteLine("\nДобавление слова в словарь");
+                        // DictionaryKeyValue.ReturnMenu("add");
+                        DictionaryKeyValue keyValue = new DictionaryKeyValue();
+                        keyValue.MethodAdd();
+                        classDiction.AddObject(keyValue);
                         break;
                     case ConsoleKey.NumPad3:
                         Console.WriteLine("\nИзменение слова в словаре");
                         DictionaryKeyValue.ReturnMenu("change");
+                        classDiction.DeserrializationObject();
                         break;
                     case ConsoleKey.NumPad4:
                         Console.WriteLine("\nУдаление слова из словаря");
@@ -68,6 +77,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                 }
             } while (flag == true); // TODO 05.04.2023 2:32  сделал выход из цикла по условию 
             #endregion
+            classDiction.SerrializationObject();
         }
         public static void UserHint() // todo 05-04-2023 подсказка для пользователя
         {
