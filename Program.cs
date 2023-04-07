@@ -40,7 +40,9 @@ string ver = Console.ReadLine();
 one.MethodFindeEngRuss(ver);
 CreationAndModificationXML cr = new CreationAndModificationXML();
 cr.SerrializationObject(one);
+CreationAndModificationXML cr2 = new CreationAndModificationXML();
 
+cr2.DeserrializationObject(one);
 Manager_Menu.UserMenu();
 
 
