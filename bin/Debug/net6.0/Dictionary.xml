@@ -2,15 +2,7 @@
 <ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DictionaryKeyValue>
     <Eng_words>
-      <string>good</string>
-    </Eng_words>
-    <Rus_words>
-      <string>хорошо</string>
-    </Rus_words>
-  </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>ввв</string>
+      <string>oiukyjty</string>
     </Eng_words>
     <Rus_words>
       <string>3</string>
@@ -18,26 +10,10 @@
   </DictionaryKeyValue>
   <DictionaryKeyValue>
     <Eng_words>
-      <string>вввыыы</string>
+      <string>rhrth</string>
     </Eng_words>
     <Rus_words>
-      <string>33333</string>
-    </Rus_words>
-  </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>tree</string>
-    </Eng_words>
-    <Rus_words>
-      <string>дерево</string>
-    </Rus_words>
-  </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>ulia</string>
-    </Eng_words>
-    <Rus_words>
-      <string>улитка</string>
+      <string>3</string>
     </Rus_words>
   </DictionaryKeyValue>
 </ArrayOfDictionaryKeyValue>

@@ -20,7 +20,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         ////// Серриализация списка обьектов
         // метод для сравнения строк именно английских
         // 04.04.2023 метод сравнения английских слов работает
-        public void MethodFindEngRuss(DictionaryKeyValue obj1) // надо передать список обьектов по которому будем искать совпадения
+        public void MethodFindEngRuss(List<DictionaryKeyValue> dictions) // надо передать список обьектов по которому будем искать совпадения
         {
             Console.WriteLine("Введите искомое слово");
             var str  = Console.ReadLine();  

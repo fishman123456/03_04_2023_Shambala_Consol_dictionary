@@ -32,8 +32,9 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         break;
                     case ConsoleKey.NumPad1:
                         Console.WriteLine("\nПоиск перевода введите слово");
-                        classDiction.MethodFindEngRuss();
-                       
+                        classDiction.Deser();
+                        //classDiction.MethodFindEngRuss();
+
                         break;
                     case ConsoleKey.NumPad2:
                           Console.WriteLine("\nДобавление слова в словарь\n");
