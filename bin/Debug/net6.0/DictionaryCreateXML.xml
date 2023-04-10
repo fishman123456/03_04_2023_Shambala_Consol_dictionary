@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DictionaryKeyValue>
+    <Eng_words>
+      <string>tree</string>
+    </Eng_words>
+    <Rus_words>
+      <string>дерево</string>
+    </Rus_words>
+  </DictionaryKeyValue>
+  <DictionaryKeyValue>
+    <Eng_words>
+      <string>one</string>
+    </Eng_words>
+    <Rus_words>
+      <string>один</string>
+    </Rus_words>
+  </DictionaryKeyValue>
+</ArrayOfDictionaryKeyValue>
