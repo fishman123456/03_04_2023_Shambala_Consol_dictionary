@@ -2,18 +2,17 @@
 <ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DictionaryKeyValue>
     <Eng_words>
-      <string>tree</string>
+      <string>вв5в</string>
     </Eng_words>
     <Rus_words>
-      <string>дерево</string>
+      <string>999</string>
     </Rus_words>
   </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>one</string>
+</ArrayOfDictionaryKeyValue>g_words>
+      <string>pool</string>
     </Eng_words>
     <Rus_words>
-      <string>один</string>
+      <string>полный</string>
     </Rus_words>
   </DictionaryKeyValue>
-</ArrayOfDictionaryKeyValue>
+</ArrayOfDictionaryKeyValue>KeyValue>

@@ -32,11 +32,11 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         break;
                     case ConsoleKey.NumPad1:
                         //Console.WriteLine("\nПоиск перевода введите слово");
-                        DictionaryKeyValue.ReturnMenu("input");
-
+                   
+                      
                         break;
                     case ConsoleKey.NumPad2:
-                        //  Console.WriteLine("\nДобавление слова в словарь");
+                          Console.WriteLine("\nДобавление слова в словарь\n");
                         // DictionaryKeyValue.ReturnMenu("add");
                         DictionaryKeyValue keyValue = new DictionaryKeyValue();
                         keyValue.MethodAdd();
@@ -44,16 +44,17 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         break;
                     case ConsoleKey.NumPad3:
                         Console.WriteLine("\nИзменение слова в словаре");
-                        DictionaryKeyValue.ReturnMenu("change");
+                      
                         classDiction.DeserrializationObject();
                         break;
                     case ConsoleKey.NumPad4:
                         Console.WriteLine("\nУдаление слова из словаря");
-                        DictionaryKeyValue.ReturnMenu("delete");
+                      
                         break;
-                    //case ConsoleKey.NumPad5:
-                    //    Console.WriteLine("\nNumPad5");
-                    //    break;
+                    case ConsoleKey.NumPad5:
+                        Console.WriteLine("\nСохранить в файл");
+                        classDiction.SerrializationObject();
+                        break;
                     //case ConsoleKey.NumPad6:
                     //    Console.WriteLine("\nNumPad6");
                     //    break;
@@ -77,7 +78,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                 }
             } while (flag == true); // TODO 05.04.2023 2:32  сделал выход из цикла по условию 
             #endregion
-            classDiction.SerrializationObject();
+           
         }
         public static void UserHint() // todo 05-04-2023 подсказка для пользователя
         {
@@ -87,7 +88,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
             Console.WriteLine("\tNumPad2. Добавление слова в словарь (нажмите для ввода слова)");
             Console.WriteLine("\tNumPad3. Изменение слова в словаре (нажмите для ввода слова)");
             Console.WriteLine("\tNumPad4. Удаление слова из словаря (нажмите для ввода слова)");
-            //Console.WriteLine("5. Добавление слова в словарь (нажмите для ввода слова)\n");
+            Console.WriteLine("\tNumPad5. Удаление слова из словаря (нажмите для ввода слова)");
             //Console.WriteLine("6. Добавление слова в словарь (нажмите для ввода слова)\n");
             //Console.WriteLine("7. Добавление слова в словарь (нажмите для ввода слова)\n");
             //Console.WriteLine("8. Добавление слова в словарь (нажмите для ввода слова)\n");
