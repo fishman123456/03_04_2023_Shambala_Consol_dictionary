@@ -53,7 +53,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                     case ConsoleKey.NumPad4:
                         Console.WriteLine("\nУдаление слова из словаря");
                         classDiction.MethodDeleteEngRuss();
-                        classDiction.Ser();
+                        classDiction.NewXML();
                         break;
                     case ConsoleKey.NumPad5:
                         Console.WriteLine("\nСохранить в файл");

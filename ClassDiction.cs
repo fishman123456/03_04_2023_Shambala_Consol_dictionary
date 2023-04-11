@@ -26,15 +26,25 @@ namespace _03_04_2023_Shambala_Consol_dictionary
             DictionaryKeyValue ob = new DictionaryKeyValue();
             Console.WriteLine("Введите слово для удаления\\изменения ");
             var str = Console.ReadLine();
+            int delelement = 0;
+            int delelementnumber = 0;
             foreach (DictionaryKeyValue obj2 in dictions)
             {
+               
                 if (obj2.Eng_words.Contains(str) || (obj2.Rus_words.Contains(str)))
                 {
                     Console.WriteLine("Удаляем слово и перевод!");
-                    dictions.Remove(obj2);
+                    delelementnumber = delelement;
+                    //dictions.Remove(obj2);
                     Console.WriteLine("Слово удалено!");
                     break;
                 }
+                delelement++;
+            }
+            dictions.RemoveAt(delelementnumber);
+            if (ob != null) 
+            {
+
             }
         }
 
@@ -45,7 +55,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         // 04.04.2023 метод сравнения английских слов работает
         public void MethodFindEngRuss() // надо передать список обьектов по которому будем искать совпадения
         {
-            DictionaryKeyValue ob = new DictionaryKeyValue();
+            //DictionaryKeyValue ob = new DictionaryKeyValue();
             Console.WriteLine("Введите искомое слово");
             var str  = Console.ReadLine();  
             foreach (DictionaryKeyValue obj2 in dictions)
@@ -57,13 +67,23 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                 }   
             }
         }
+        // Создание нового файла и добавление в него списка обьектов после удаления
+        public void NewXML() // TODO удаление работает, осталось замену сделать 11-04-2023 18:33
+        {
+            XmlSerializer formatter = new XmlSerializer(typeof(List<DictionaryKeyValue>));
+            // сохранение массива в файл
+            using (FileStream fsi = new FileStream("Dictionary.xml", FileMode.Create))
+            {
+                formatter.Serialize(fsi, dictions);
+            }
+        }
         public void Ser()
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List <DictionaryKeyValue>));
             // сохранение массива в файл
-            using (FileStream fs = new FileStream("Dictionary.xml", FileMode.OpenOrCreate))
+            using (FileStream fsi = new FileStream("Dictionary.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, dictions);
+                formatter.Serialize(fsi, dictions);
             }
         }
         ////// Десерриализация списка обьектов с выводом на консоль

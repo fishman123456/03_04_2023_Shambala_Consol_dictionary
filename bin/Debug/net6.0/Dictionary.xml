@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />  <DictionaryKeyValue>
+<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DictionaryKeyValue>
     <Eng_words>
-      <string>r</string>
+      <string>yurjyu</string>
     </Eng_words>
     <Rus_words>
-      <string>р</string>
+      <string>98</string>
     </Rus_words>
   </DictionaryKeyValue>
 </ArrayOfDictionaryKeyValue>
