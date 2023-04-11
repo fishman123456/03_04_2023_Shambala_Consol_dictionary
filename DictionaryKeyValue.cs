@@ -47,8 +47,8 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         //  TODO:  04-04-2023 15:24 Написал перегрузку метода вывода обьекта класса в строку 
         public override string ToString()
         {
-            foreach (string eng in Eng_words) { Console.WriteLine(eng); }
-            foreach (string rus in Rus_words) { Console.WriteLine(rus); }
+            foreach (string eng in Eng_words) { Console.WriteLine("Английское слово "+eng); }
+            foreach (string rus in Rus_words) { Console.WriteLine("Русское слово " + rus); }
             //return ("English " + Eng_words.ToString() +"\t" + "Russian " + Rus_words.ToString());
             return "";
         }

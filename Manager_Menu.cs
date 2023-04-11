@@ -32,8 +32,8 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         break;
                     case ConsoleKey.NumPad1:
                         Console.WriteLine("\nПоиск перевода введите слово");
-                        classDiction.Deser();
-                        //classDiction.MethodFindEngRuss();
+                        //classDiction.Deser();
+                        classDiction.MethodFindEngRuss();
 
                         break;
                     case ConsoleKey.NumPad2:
@@ -42,6 +42,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                         DictionaryKeyValue keyValue = new DictionaryKeyValue();
                         keyValue.MethodAdd();
                         classDiction.AddObject(keyValue);
+                        classDiction.Ser();
                         break;
                     case ConsoleKey.NumPad3:
                         Console.WriteLine("\nСчитывание из файла");

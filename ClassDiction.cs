@@ -20,15 +20,17 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         ////// Серриализация списка обьектов
         // метод для сравнения строк именно английских
         // 04.04.2023 метод сравнения английских слов работает
-        public void MethodFindEngRuss(List<DictionaryKeyValue> dictions) // надо передать список обьектов по которому будем искать совпадения
+        public void MethodFindEngRuss() // надо передать список обьектов по которому будем искать совпадения
         {
+            DictionaryKeyValue ob = new DictionaryKeyValue();
             Console.WriteLine("Введите искомое слово");
             var str  = Console.ReadLine();  
-            foreach (DictionaryKeyValue obj in dictions)
+            foreach (DictionaryKeyValue obj2 in dictions)
             {
-               if (((str != null)&&(obj.Eng_words.Contains(str)) || (obj.Rus_words.Contains(str))))
+               if (obj2.Eng_words.Contains(str) || (obj2.Rus_words.Contains(str)))
                 {
-                    Console.WriteLine("Английское слово" + obj.Eng_words + " " + "Русское слово " + obj.Rus_words);
+                    Console.WriteLine("Есть такое слово!");
+                    Console.WriteLine(obj2.ToString());
                 }   
             }
         }
@@ -49,11 +51,11 @@ namespace _03_04_2023_Shambala_Consol_dictionary
             // восстановление массива из файла
             using (FileStream fs = new FileStream("Dictionary.xml", FileMode.OpenOrCreate))
             {
-                List<DictionaryKeyValue> NewWords = formatter.Deserialize(fs) as List<DictionaryKeyValue>;
+                 dictions = formatter.Deserialize(fs) as List<DictionaryKeyValue>;
 
-                if (NewWords != null)
+                if (dictions != null)
                 {
-                    foreach (DictionaryKeyValue words in NewWords)
+                    foreach (DictionaryKeyValue words in dictions)
                     {
                         foreach (char str in words.ToString())
                         {
