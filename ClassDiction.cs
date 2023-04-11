@@ -13,10 +13,33 @@ namespace _03_04_2023_Shambala_Consol_dictionary
     {
         //создание списка обьектов
         public List <DictionaryKeyValue> dictions = new List<DictionaryKeyValue>();
+
+        // добавление обьекта
         public void AddObject(DictionaryKeyValue obj)
         {
             dictions.Add(obj);
         }
+
+        // поиск и удаление строк
+        public void MethodDeleteEngRuss() // 
+        {
+            DictionaryKeyValue ob = new DictionaryKeyValue();
+            Console.WriteLine("Введите слово для удаления\\изменения ");
+            var str = Console.ReadLine();
+            foreach (DictionaryKeyValue obj2 in dictions)
+            {
+                if (obj2.Eng_words.Contains(str) || (obj2.Rus_words.Contains(str)))
+                {
+                    Console.WriteLine("Удаляем слово и перевод!");
+                    dictions.Remove(obj2);
+                    Console.WriteLine("Слово удалено!");
+                    break;
+                }
+            }
+        }
+
+
+
         ////// Серриализация списка обьектов
         // метод для сравнения строк именно английских
         // 04.04.2023 метод сравнения английских слов работает

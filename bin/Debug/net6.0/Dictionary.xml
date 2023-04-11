@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <DictionaryKeyValue>
+<ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />  <DictionaryKeyValue>
     <Eng_words>
-      <string>oiukyjty</string>
+      <string>r</string>
     </Eng_words>
     <Rus_words>
-      <string>3</string>
-    </Rus_words>
-  </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>rhrth</string>
-    </Eng_words>
-    <Rus_words>
-      <string>3</string>
-    </Rus_words>
-  </DictionaryKeyValue>
-  <DictionaryKeyValue>
-    <Eng_words>
-      <string>ерекрек</string>
-    </Eng_words>
-    <Rus_words>
-      <string>3333</string>
+      <string>р</string>
     </Rus_words>
   </DictionaryKeyValue>
 </ArrayOfDictionaryKeyValue>
