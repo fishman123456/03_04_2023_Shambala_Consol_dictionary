@@ -2,10 +2,10 @@
 <ArrayOfDictionaryKeyValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DictionaryKeyValue>
     <Eng_words>
-      <string>yurjyu</string>
+      <string> home</string>
     </Eng_words>
     <Rus_words>
-      <string>98</string>
+      <string>дом</string>
     </Rus_words>
   </DictionaryKeyValue>
 </ArrayOfDictionaryKeyValue>

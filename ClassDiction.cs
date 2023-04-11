@@ -23,7 +23,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
         // поиск и удаление строк
         public void MethodDeleteEngRuss() // 
         {
-            DictionaryKeyValue ob = new DictionaryKeyValue();
+            //DictionaryKeyValue ob = new DictionaryKeyValue();
             Console.WriteLine("Введите слово для удаления\\изменения ");
             var str = Console.ReadLine();
             int delelement = 0;
@@ -42,10 +42,7 @@ namespace _03_04_2023_Shambala_Consol_dictionary
                 delelement++;
             }
             dictions.RemoveAt(delelementnumber);
-            if (ob != null) 
-            {
-
-            }
+           
         }
 
 
